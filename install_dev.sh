@@ -22,7 +22,7 @@ wget -O Marzban-node/docker-compose.yml https://bot.amironet.work/node/docker-co
 (cd ~/Marzban-node && docker compose down && docker compose up --remove-orphans -d)
 wget -O /var/lib/marzban-node/ssl_client_cert.pem https://bot.amironet.work/node/ssl_client_cert.pem
 
-apt install haproxy
+apt install haproxy -y
 wget -O /etc/haproxy/haproxy.cfg https://bot.amironet.work/node/haproxy.cfg
 systemctl restart haproxy.service
 
