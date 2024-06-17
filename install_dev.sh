@@ -3,6 +3,9 @@ echo "q4_0_4p"
 # پاک کردن صفحه ترمینال
 clear
 
+apt update && apt upgrade -y
+apt install net-tools
+
 # دانلود و استخراج فایل Xray
 apt install wget unzip -y
 mkdir -p /var/lib/marzban/xray-core
