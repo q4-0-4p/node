@@ -5,9 +5,9 @@ clear
 
 # دانلود و استخراج فایل Xray
 apt install wget unzip
+mkdir -p /var/lib/marzban/xray-core && cd /var/lib/marzban/xray-core
 wget -O /var/lib/marzban/xray-core/Xray-linux-64.zip https://github.com/XTLS/Xray-core/releases/download/v1.8.4/Xray-linux-64.zip
 unzip /var/lib/marzban/xray-core/Xray-linux-64.zip -d /var/lib/marzban/xray-core
-rm /var/lib/marzban/xray-core/Xray-linux-64.zip
 
 #نصب مرزبان نود
 echo -e "\e[1;31m -Install Marzban node + Docker\e[0m"
@@ -18,6 +18,8 @@ rm Marzban-node/docker-compose.yml ;
 wget -O Marzban-node/docker-compose.yml https://bot.amironet.work/node/docker-compose.yml 
 (cd ~/Marzban-node && docker compose down && docker compose up --remove-orphans -d)
 wget -O /var/lib/marzban-node/ssl_client_cert.pem https://bot.amironet.work/node/ssl_client_cert.pem
+cd; cd Marzban-node; docker compose down; docker compose up -d
+
 
 
 # تموم
