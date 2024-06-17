@@ -18,7 +18,6 @@ rm Marzban-node/docker-compose.yml ;
 wget -O Marzban-node/docker-compose.yml https://bot.amironet.work/node/docker-compose.yml 
 (cd ~/Marzban-node && docker compose down && docker compose up --remove-orphans -d)
 wget -O /var/lib/marzban-node/ssl_client_cert.pem https://bot.amironet.work/node/ssl_client_cert.pem
-cd; cd Marzban-node; docker compose down; docker compose up -d
 
 
 
