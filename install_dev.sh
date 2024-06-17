@@ -4,8 +4,8 @@ echo "q4_0_4p"
 clear
 
 # دانلود و استخراج فایل Xray
-apt install wget unzip
-mkdir -p /var/lib/marzban/xray-core && cd /var/lib/marzban/xray-core
+apt install wget unzip -y
+mkdir -p /var/lib/marzban/xray-core
 wget -O /var/lib/marzban/xray-core/Xray-linux-64.zip https://github.com/XTLS/Xray-core/releases/download/v1.8.4/Xray-linux-64.zip
 unzip /var/lib/marzban/xray-core/Xray-linux-64.zip -d /var/lib/marzban/xray-core
 
