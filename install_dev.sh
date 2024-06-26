@@ -3,7 +3,7 @@ echo "q4_0_4p"
 # پاک کردن صفحه ترمینال
 clear
 
-apt update && apt upgrade -y
+apt update
 apt install net-tools
 
 # دانلود و استخراج فایل Xray
