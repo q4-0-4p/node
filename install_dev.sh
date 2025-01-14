@@ -23,7 +23,7 @@ wget -O Marzban-node/docker-compose.yml https://amironet.work/docker-compose.yml
 wget -O /var/lib/marzban-node/ssl_client_cert.pem https://amironet.work/ssl_client_cert.pem
 
 apt install haproxy -y
-wget -O /etc/haproxy/haproxy.cfg https://amironet.work/haproxy.cfg
+wget -O /etc/haproxy/haproxy.cfg https://amironet.work/CreateauserAmiro/node/haproxy.cfg
 systemctl restart haproxy.service
 
 # تموم
