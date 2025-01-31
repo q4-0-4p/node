@@ -18,12 +18,12 @@ curl -fsSL https://get.docker.com | sh
 git clone https://github.com/Gozargah/Marzban-node
 (cd ~/Marzban-node && docker compose up -d)
 rm Marzban-node/docker-compose.yml ;
-wget -O Marzban-node/docker-compose.yml https://amironet.work/docker-compose.yml
+wget -O Marzban-node/docker-compose.yml https://bot.amironetwork.ir/docker-compose.yml
 (cd ~/Marzban-node && docker compose down && docker compose up --remove-orphans -d)
-wget -O /var/lib/marzban-node/ssl_client_cert.pem https://amironet.work/ssl_client_cert.pem
+wget -O /var/lib/marzban-node/ssl_client_cert.pem https://bot.amironetwork.ir/ssl_client_cert.pem
 
 apt install haproxy -y
-wget -O /etc/haproxy/haproxy.cfg https://amironet.work/CreateauserAmiro/node/haproxy.cfg
+wget -O /etc/haproxy/haproxy.cfg https://bot.amironetwork.ir/CreateauserAmiro/node/haproxy.cfg
 systemctl restart haproxy.service
 
 # تموم
