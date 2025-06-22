@@ -7,10 +7,10 @@ apt update
 apt install net-tools
 
 # دانلود و استخراج فایل Xray
-apt install wget unzip -y
-mkdir -p /var/lib/marzban/xray-core
-wget -O /var/lib/marzban/xray-core/Xray-linux-64.zip https://github.com/XTLS/Xray-core/releases/download/v1.8.4/Xray-linux-64.zip
-unzip /var/lib/marzban/xray-core/Xray-linux-64.zip -d /var/lib/marzban/xray-core
+#apt install wget unzip -y
+#mkdir -p /var/lib/marzban/xray-core
+#wget -O /var/lib/marzban/xray-core/Xray-linux-64.zip https://github.com/XTLS/Xray-core/releases/download/v1.8.4/Xray-linux-64.zip
+#unzip /var/lib/marzban/xray-core/Xray-linux-64.zip -d /var/lib/marzban/xray-core
 
 #نصب مرزبان نود
 echo -e "\e[1;31m -Install Marzban node + Docker\e[0m"
